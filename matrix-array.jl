@@ -43,3 +43,17 @@ first_tuple = Array{Tuple{Int64,Float64,Int64}}(undef, 3)
 first_tuple[1] = (1, 2.0, 1)
 println(first_tuple)
 
+# Index access
+println("Index access")
+a = [1 2 3; 3 2 1; 9 8 7]
+for i in 1:3
+    println("a[$i] = ", a[i])
+end
+
+#
+println("Last element")
+println(a[end])
+
+#
+println("Until the last")
+println(a[1:end])
